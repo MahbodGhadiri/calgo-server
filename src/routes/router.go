@@ -4,7 +4,7 @@ import (
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
 
-	handler "calgo/src/handlers"
+	handler "calgo-server/src/handlers"
 )
 
 func SetupRouter() *chi.Mux {

@@ -1,7 +1,7 @@
 package main
 
 import (
-	router "calgo/src/routes"
+	router "calgo-server/src/routes"
 	"fmt"
 	"net"
 	"net/http"

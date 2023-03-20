@@ -1,4 +1,4 @@
-module calgo
+module calgo-server
 
 go 1.19
 
