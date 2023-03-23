@@ -23,6 +23,11 @@ func GetInstance() *gorm.DB {
 				panic(err)
 			}
 			fmt.Println("connected to database")
+
+			//creating tables if they do not exist
+			db.AutoMigrate(&Token{})
+			db.AutoMigrate(&User{})
+
 			dbInstance = db
 		} else {
 			fmt.Println("Single instance already created.")
